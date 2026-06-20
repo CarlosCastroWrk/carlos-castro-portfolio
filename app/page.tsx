@@ -6,26 +6,53 @@ const phone = "(956) 251-0708";
 const linkedIn = "https://linkedin.com/in/carlos-castro-4a79a4323";
 const githubHref = "https://github.com/CarlosCastroWrk";
 
-const projects = [
-  {
-    name: "Boardroom / Cortex OS",
-    description:
-      "An AI-native business operating system designed to help small businesses manage customers, leads, follow-ups, scheduling, payments, operational knowledge, and execution in one workspace.",
-  },
+const platformCapabilities = [
+  "Business memory",
+  "Workflow engine",
+  "Customer activity",
+  "Operational knowledge",
+  "Execution tracking",
+];
+
+const implementations = [
   {
     name: "Mavrik Aircraft Services",
+    focus: "Aviation implementation",
     description:
-      "A focused implementation for aircraft detailing and aviation service businesses. Includes customer intake, lead management, quoting, scheduling, service tracking, and customer communication workflows.",
+      "An aviation-focused implementation of Boardroom/Cortex designed for aircraft detailing and aviation service businesses.",
+    details: [
+      "Customer intake",
+      "Lead management",
+      "Quoting and scheduling",
+      "Service tracking",
+      "Customer communication",
+    ],
   },
   {
     name: "Automotive Sales Operating System",
+    focus: "Automotive implementation",
     description:
-      "An in-development workflow system for automotive sales professionals to manage prospects, appointments, follow-ups, customer notes, and pipeline visibility.",
+      "An automotive-focused implementation of Boardroom/Cortex designed for sales professionals who need structured lead management, follow-up systems, customer tracking, appointment coordination, and pipeline visibility.",
+    details: [
+      "Prospect management",
+      "Follow-up workflows",
+      "Appointment tracking",
+      "Customer relationship management",
+      "Pipeline visibility",
+    ],
   },
   {
     name: "Water Restoration Operations Dashboard",
+    focus: "Restoration implementation",
     description:
-      "A business operations dashboard created from fragmented paper, phone, and text-message workflows. Includes job tracking, customer management, photo documentation, project visibility, and follow-up execution.",
+      "An implementation developed for my older brother's water mitigation business after studying how information moved through calls, text messages, photos, and paper-based workflows.",
+    details: [
+      "Centralized job tracking",
+      "Customer management",
+      "Photo documentation",
+      "Project visibility",
+      "Follow-up execution",
+    ],
   },
 ];
 
@@ -110,7 +137,7 @@ export default function Home() {
           className="hidden items-center gap-7 text-sm font-medium text-graphite sm:flex"
         >
           <a className="transition hover:text-sea" href="#projects">
-            Projects
+            Platform
           </a>
           <a className="transition hover:text-sea" href="#experience">
             Experience
@@ -164,18 +191,18 @@ export default function Home() {
 
           <div className="rounded-lg border border-line bg-white p-5 shadow-soft">
             <div className="border-b border-line pb-4">
-              <p className="text-sm font-semibold text-ink">Workflow Systems Map</p>
+              <p className="text-sm font-semibold text-ink">Platform Architecture</p>
               <p className="mt-1 text-sm text-graphite">
-                Study the real workflow, find the bottleneck, build the system.
+                One operating system adapted into industry-specific workflows.
               </p>
             </div>
             <div className="mt-5 space-y-3">
               {[
-                "Customer intake",
-                "Lead and follow-up memory",
-                "Scheduling and service tracking",
-                "Operational documentation",
-                "Execution visibility",
+                "Boardroom / Cortex foundation",
+                "Business memory layer",
+                "Workflow engine",
+                "Implementation layer",
+                "Industry-specific execution",
               ].map((item, index) => (
                 <div
                   className="flex items-center gap-3 rounded-md border border-line bg-paper p-3"
@@ -205,8 +232,10 @@ export default function Home() {
                 Concordia University Texas, graduating December 2026. I&apos;m
                 focused on helping people and businesses adopt AI in practical
                 ways: workflow design, operations systems, customer follow-up,
-                service tracking, and business memory. I build intentionally for
-                real people, not abstract demos.
+                service tracking, and business memory. My work centers on one
+                reusable operating foundation, Boardroom/Cortex, that can be
+                adapted into industry-specific systems after studying how real
+                people work.
               </p>
             </div>
             <figure className="overflow-hidden rounded-lg border border-line bg-paper shadow-soft">
@@ -229,21 +258,86 @@ export default function Home() {
       </section>
 
       <section className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-20" id="projects">
-        <SectionHeading eyebrow="Projects" title="Systems built around actual work." />
-        <div className="grid gap-4 md:grid-cols-2">
-          {projects.map((project) => (
-            <article
-              className="rounded-lg border border-line bg-white p-6 shadow-[0_1px_0_rgba(16,32,31,0.04)] transition hover:border-sea"
-              key={project.name}
-            >
-              <h3 className="text-xl font-semibold tracking-tight text-ink">
-                {project.name}
-              </h3>
-              <p className="mt-4 text-base leading-7 text-graphite">
-                {project.description}
+        <SectionHeading
+          eyebrow="Platform"
+          title="One operating foundation, adapted across industries."
+        />
+        <div className="rounded-lg border border-line bg-white p-6 shadow-soft sm:p-8">
+          <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-sea">
+                Core system
               </p>
-            </article>
-          ))}
+              <h3 className="mt-3 text-3xl font-semibold tracking-tight text-ink">
+                Boardroom / Cortex OS
+              </h3>
+              <p className="mt-2 text-base font-semibold text-moss">
+                AI-Native Operations Platform
+              </p>
+              <p className="mt-5 text-lg leading-8 text-graphite">
+                Boardroom/Cortex is an AI-native operating system and business
+                memory layer designed to help organizations organize knowledge,
+                decisions, customer activity, workflows, and execution.
+              </p>
+              <p className="mt-4 text-base leading-7 text-graphite">
+                It serves as the foundation for industry-specific
+                implementations, allowing operational systems to be rapidly
+                adapted to different business environments while maintaining a
+                shared intelligence and workflow architecture.
+              </p>
+            </div>
+            <div className="rounded-lg border border-line bg-paper p-5">
+              <p className="text-sm font-semibold text-ink">
+                Shared architecture
+              </p>
+              <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
+                {platformCapabilities.map((capability) => (
+                  <div
+                    className="rounded-md border border-line bg-white px-4 py-3 text-sm font-medium text-graphite"
+                    key={capability}
+                  >
+                    {capability}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="my-8 flex items-center justify-center gap-4 text-sm font-semibold uppercase tracking-[0.16em] text-sea">
+            <span className="h-px flex-1 bg-line" />
+            <span>Powers</span>
+            <span className="h-px flex-1 bg-line" />
+          </div>
+
+          <div className="grid gap-4 lg:grid-cols-3">
+            {implementations.map((implementation) => (
+              <article
+                className="rounded-lg border border-line bg-white p-5 shadow-[0_1px_0_rgba(16,32,31,0.04)]"
+                key={implementation.name}
+              >
+                <p className="text-sm font-semibold text-sea">
+                  {implementation.focus}
+                </p>
+                <h3 className="mt-3 text-xl font-semibold tracking-tight text-ink">
+                  {implementation.name}
+                </h3>
+                <p className="mt-4 text-base leading-7 text-graphite">
+                  {implementation.description}
+                </p>
+                <ul className="mt-5 space-y-2">
+                  {implementation.details.map((detail) => (
+                    <li
+                      className="flex gap-2 text-sm leading-6 text-graphite"
+                      key={detail}
+                    >
+                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sea" />
+                      {detail}
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
