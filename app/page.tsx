@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const resumeHref = "/Carlos_Castro_AI_Operator_Resume_2026.pdf";
 const email = "los124506@gmail.com";
 const phone = "(956) 251-0708";
@@ -192,15 +194,37 @@ export default function Home() {
 
       <section className="border-y border-line bg-white" id="about">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-20">
-          <SectionHeading eyebrow="About" title="Practical AI adoption for real operations." />
-          <p className="max-w-4xl text-lg leading-8 text-graphite">
-            I&apos;m a Business Administration and Marketing senior at Concordia
-            University Texas, graduating December 2026. I&apos;m focused on
-            helping people and businesses adopt AI in practical ways: workflow
-            design, operations systems, customer follow-up, service tracking, and
-            business memory. I build intentionally for real people, not abstract
-            demos.
-          </p>
+          <div className="grid gap-10 lg:grid-cols-[1fr_340px] lg:items-center">
+            <div>
+              <SectionHeading
+                eyebrow="About"
+                title="Practical AI adoption for real operations."
+              />
+              <p className="max-w-4xl text-lg leading-8 text-graphite">
+                I&apos;m a Business Administration and Marketing senior at
+                Concordia University Texas, graduating December 2026. I&apos;m
+                focused on helping people and businesses adopt AI in practical
+                ways: workflow design, operations systems, customer follow-up,
+                service tracking, and business memory. I build intentionally for
+                real people, not abstract demos.
+              </p>
+            </div>
+            <figure className="overflow-hidden rounded-lg border border-line bg-paper shadow-soft">
+              <div className="relative aspect-[4/5] w-full">
+                <Image
+                  alt="Carlos Castro outdoors by a mountain lake"
+                  className="object-cover object-[center_57%]"
+                  fill
+                  priority
+                  sizes="(min-width: 1024px) 340px, 100vw"
+                  src="/carlos-castro-photo.jpg"
+                />
+              </div>
+              <figcaption className="border-t border-line bg-white px-4 py-3 text-sm text-graphite">
+                Carlos Castro | Austin, Texas
+              </figcaption>
+            </figure>
+          </div>
         </div>
       </section>
 
