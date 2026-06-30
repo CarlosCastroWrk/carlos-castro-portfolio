@@ -18,7 +18,7 @@ Boardroom / Cortex OS
 Industry-specific implementations
 ```
 
-Boardroom/Cortex is positioned as the shared operating system, workflow engine, and business memory layer. Mavrik Aircraft Services, Automotive Sales Operating System, and Water Restoration Operations Dashboard are presented as implementations built on top of that foundation.
+Boardroom/Cortex is positioned as the shared operating system, workflow engine, and business memory layer. Zakar is the active first vertical project, with Mavrik Aircraft Services preserved as proof of the platform pattern and Water Restoration Operations Dashboard presented as a workflow-systems example.
 
 ## Why It Exists
 

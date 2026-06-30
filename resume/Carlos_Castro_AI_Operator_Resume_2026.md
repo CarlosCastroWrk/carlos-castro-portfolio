@@ -24,24 +24,20 @@ Designed to help organizations organize knowledge, customer activity, workflows,
 
 ## Selected Implementations
 
+### Zakar
+
+- Active first vertical project
+- Dealership salesperson assistant for lead memory, follow-up queues, reviewed message drafts, and customer communication
+- Built around salesperson voice, inventory accuracy boundaries, and human review before customer-facing messages
+
 ### Mavrik Aircraft Services
 
-- Aviation implementation of Boardroom/Cortex
+- Preserved aircraft-detailing implementation of Boardroom/Cortex
 - Customer intake
-- Lead management
-- Scheduling
-- Quoting
-- Service tracking
-- Customer communication
-
-### Automotive Sales Operating System
-
-- Automotive implementation of Boardroom/Cortex
-- Prospect management
-- Follow-up workflows
-- Appointment tracking
-- Customer relationship management
-- Pipeline visibility
+- Aircraft records
+- Quote workflow
+- Accepted quote state
+- Demonstrates adapting the shared platform pattern to a vertical service workflow
 
 ### Water Restoration Operations Dashboard
 

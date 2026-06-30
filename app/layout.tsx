@@ -3,13 +3,13 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://carlos-castro-portfolio-alpha.vercel.app"),
-  title: "Carlos Castro | AI Operations & Technical Support Builder",
+  title: "Carlos Castro | AI-Native Workflow Systems Builder",
   description:
-    "Portfolio for Carlos Castro, an AI operations and technical support builder focused on practical workflow systems, user operations, and business operations.",
+    "Portfolio for Carlos Castro, an AI-native operator who builds practical workflow systems for real business operations, support, and implementation roles.",
   openGraph: {
-    title: "Carlos Castro | AI Operations & Technical Support Builder",
+    title: "Carlos Castro | AI-Native Workflow Systems Builder",
     description:
-      "Live operations troubleshooting, AI workflow systems, and customer-facing execution for AI support and business operations roles.",
+      "Boardroom/Cortex, Zakar dealership workflow systems, live operations troubleshooting, and customer-facing execution for AI support, implementation, and product operations roles.",
     images: [
       {
         url: "/og-image.svg",
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Carlos Castro | AI Operations & Technical Support Builder",
+    title: "Carlos Castro | AI-Native Workflow Systems Builder",
     description:
-      "Live operations troubleshooting, AI workflow systems, and customer-facing execution.",
+      "Practical AI workflow systems, live operations troubleshooting, and customer-facing execution.",
     images: ["/og-image.svg"],
   },
 };

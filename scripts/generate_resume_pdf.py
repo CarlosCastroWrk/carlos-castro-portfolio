@@ -191,25 +191,22 @@ def build_story():
     story += section("Selected Implementations", s["section"])
     implementation_blocks = [
         (
-            "Mavrik Aircraft Services",
+            "Zakar",
             [
-                "Aviation implementation of Boardroom/Cortex",
-                "Customer intake",
-                "Lead management",
-                "Scheduling and quoting",
-                "Service tracking",
-                "Customer communication",
+                "Active first vertical project",
+                "Dealership salesperson assistant for lead memory, follow-up queues, and reviewed message drafts",
+                "Built around salesperson voice, inventory accuracy boundaries, and human review before customer-facing messages",
             ],
         ),
         (
-            "Automotive Sales Operating System",
+            "Mavrik Aircraft Services",
             [
-                "Automotive implementation of Boardroom/Cortex",
-                "Prospect management",
-                "Follow-up workflows",
-                "Appointment tracking",
-                "Customer relationship management",
-                "Pipeline visibility",
+                "Preserved aircraft-detailing implementation of Boardroom/Cortex",
+                "Customer intake",
+                "Aircraft records",
+                "Quote workflow",
+                "Accepted quote state",
+                "Demonstrates adapting the shared platform pattern to a vertical service workflow",
             ],
         ),
         (
