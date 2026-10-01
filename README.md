@@ -1,24 +1,24 @@
 # Carlos Castro Portfolio
 
-Professional portfolio site for Carlos Castro, built for AI fellowship and job applications.
+Professional portfolio site for Carlos Castro, built around business operations, implementation, customer success, and practical AI-assisted work.
 
 Live site: [carlos-castro-portfolio-alpha.vercel.app](https://carlos-castro-portfolio-alpha.vercel.app)
 
 ## Positioning
 
-This portfolio presents Carlos as an AI-native operator and workflow systems builder focused on practical AI adoption inside real businesses.
+This portfolio presents Carlos as an early-career operator learning business operations by doing the work, with TurnOS as the primary proof point.
 
 The core story is:
 
 ```text
-Boardroom / Cortex OS
+TurnOS
     |
-    | reusable AI-native operations platform
+    | workflow system built and used during apartment turnover
     |
-Industry-specific implementations
+CleanDay + supporting projects
 ```
 
-Boardroom/Cortex is positioned as the shared operating system, workflow engine, and business memory layer. Zakar is the active first vertical project, with Mavrik Aircraft Services preserved as proof of the platform pattern and Water Restoration Operations Dashboard presented as a workflow-systems example.
+TurnOS is the primary project. CleanDay is described as a residential cleaning project in development.
 
 ## Why It Exists
 
@@ -43,13 +43,13 @@ The portfolio is designed for reviewers who need to quickly understand:
 The downloadable resume lives at:
 
 ```text
-public/Carlos_Castro_AI_Operator_Resume_2026.pdf
+public/Carlos_Castro_Resume_2026.pdf
 ```
 
 The resume source and generator live in:
 
 ```text
-resume/Carlos_Castro_AI_Operator_Resume_2026.md
+resume/Carlos_Castro_Resume_2026.md
 scripts/generate_resume_pdf.py
 ```
 

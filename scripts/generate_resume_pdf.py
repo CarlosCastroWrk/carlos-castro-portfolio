@@ -17,8 +17,8 @@ from reportlab.platypus import (
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PUBLIC_PDF = ROOT / "public" / "Carlos_Castro_AI_Operator_Resume_2026.pdf"
-OUTPUT_PDF = ROOT / "output" / "pdf" / "Carlos_Castro_AI_Operator_Resume_2026.pdf"
+PUBLIC_PDF = ROOT / "public" / "Carlos_Castro_Resume_2026.pdf"
+OUTPUT_PDF = ROOT / "output" / "pdf" / "Carlos_Castro_Resume_2026.pdf"
 
 
 INK = colors.HexColor("#10201f")
@@ -140,11 +140,11 @@ def build_story():
     story = [
         para("Carlos Castro", s["name"]),
         para(
-            "AI-Native Operator | Workflow Systems Builder | Customer Success & Operations",
+            "Operations Builder | Location Management | Workflow Systems",
             s["title"],
         ),
         para(
-            "Austin, Texas | los124506@gmail.com | (956) 251-0708 | "
+            "Austin, Texas (open to San Francisco) | los124506@gmail.com | (956) 251-0708 | "
             "linkedin.com/in/carlos-castro-4a79a4323 | github.com/CarlosCastroWrk",
             s["contact"],
         ),
@@ -153,13 +153,10 @@ def build_story():
     story += section("Professional Summary", s["section"])
     story.append(
         para(
-            "AI-native operator and workflow systems builder focused on understanding how people work, "
-            "identifying operational bottlenecks, and translating messy workflows into structured systems. "
-            "Business Administration and Marketing senior at Concordia University Texas, graduating December 2026. "
-            "Building Boardroom/Cortex, an AI-native operations platform and business memory layer that serves as "
-            "a reusable foundation for industry-specific operational implementations. Focused on helping real "
-            "businesses adopt AI in practical ways through workflow design, customer success, implementation, "
-            "documentation, and operational execution.",
+            "Business Administration and Marketing senior with hands-on experience leading field operations, supporting "
+            "location management, and building software around real operational workflows. Combines frontline execution, "
+            "team coordination, process improvement, customer-facing operations, and AI-assisted development to identify "
+            "bottlenecks and translate them into practical systems.",
             s["body"],
         )
     )
@@ -167,54 +164,29 @@ def build_story():
     story += section("Core Skills", s["section"])
     story.append(
         para(
-            "AI implementation, workflow design, business operations, customer success, product support, "
-            "implementation support, product discovery, process improvement, documentation, stakeholder "
-            "communication, prompt engineering, Claude Code, ChatGPT, OpenAI Codex, Cursor, GitHub, Supabase, "
-            "Vercel, SQL/API fundamentals, bilingual English/Spanish.",
+            "Location management, business operations, field operations, workflow design, process improvement, quality "
+            "control, team coordination, SOPs, stakeholder communication, product discovery, systems thinking, AI "
+            "implementation, process automation, React, TypeScript, Vite, Supabase, Git/GitHub, Vercel, SQL/API "
+            "fundamentals, English/Spanish.",
             s["body_tight"],
-        )
-    )
-
-    story += section("Platform", s["section"])
-    story.append(para("Boardroom / Cortex OS", s["role"]))
-    story.append(para("AI-Native Operations Platform", s["meta"]))
-    story.append(
-        para(
-            "Building an AI-native operating system and business memory layer that serves as the foundation "
-            "for industry-specific operational implementations. Designed to help organizations organize "
-            "knowledge, customer activity, workflows, decisions, and execution while adapting to the unique "
-            "needs of different industries.",
-            s["body"],
         )
     )
 
     story += section("Selected Implementations", s["section"])
     implementation_blocks = [
         (
-            "Zakar",
+            "TurnOS",
             [
-                "Active first vertical project",
-                "Dealership salesperson assistant for lead memory, follow-up queues, and reviewed message drafts",
-                "Built around salesperson voice, inventory accuracy boundaries, and human review before customer-facing messages",
+                "Mobile-first workflow system built around real student-housing Turn work",
+                "Unit and issue tracking, crew assignments, follow-up, daily logs, reporting, and exports",
+                "Built and field-tested from firsthand operational pain points",
             ],
         ),
         (
-            "Mavrik Aircraft Services",
+            "CleanDay",
             [
-                "Preserved aircraft-detailing implementation of Boardroom/Cortex",
-                "Customer intake",
-                "Aircraft records",
-                "Quote workflow",
-                "Accepted quote state",
-                "Demonstrates adapting the shared platform pattern to a vertical service workflow",
-            ],
-        ),
-        (
-            "Water Restoration Operations Dashboard",
-            [
-                "Built for my older brother's water mitigation business after studying existing workflows",
-                "Centralized jobs, customers, photos, and follow-ups",
-                "Improved visibility into active projects and operational execution",
+                "Residential cleaning business in Austin in development",
+                "Developing tools for scheduling, crew coordination, and customer follow-up",
             ],
         ),
     ]
@@ -243,19 +215,19 @@ def build_story():
     story += section("Professional Experience", s["section"])
     experiences = [
         (
+            "Washaroo - Location Management & Business Operations",
+            "2026-Present",
+            "Support day-to-day management of an East Austin service-business location while working directly alongside ownership on operations and business decision-making. Develop hands-on experience across employee workflows, service execution, customer experience, sales procedures, inventory, SOPs, cash reconciliation, and operational reporting.",
+        ),
+        (
+            "Property Doctor Services - Turn Supervisor",
+            "Summer 2026",
+            "Supervised paint and cleaning operations during a high-volume student-housing Turn spanning approximately 567 beds and 166 units. Coordinated crews, unit priorities, inspections, callbacks, and property-management communication, then built and field-tested TurnOS from firsthand operational pain points.",
+        ),
+        (
             "BallerTV - Site Lead, Live Event Operations",
             "2024-Present",
-            "Lead tournament streaming operations across multiple venues, coordinate equipment readiness, troubleshoot technical issues, and serve as a primary point of contact for coaches, parents, tournament staff, and event stakeholders.",
-        ),
-        (
-            "H-E-B - Cooking Connections Partner",
-            "2025-Present",
-            "Conduct live product demonstrations, engage customers, communicate product value, handle questions, and execute customer-facing operations independently in a high-traffic retail environment.",
-        ),
-        (
-            "Vamos Coffee - Barista",
-            "2024",
-            "Delivered customer service in a fast-paced environment while supporting daily service operations, communication, order accuracy, and repeat customer relationships.",
+            "Lead tournament streaming operations across multiple courts and venues, coordinating equipment readiness, connectivity, scoring workflows, and live technical troubleshooting. Serve as an operational point of contact for tournament staff, coaches, parents, and event stakeholders.",
         ),
     ]
     for role, date, desc in experiences:
@@ -264,7 +236,7 @@ def build_story():
     story += section("Education & Leadership", s["section"])
     story.append(
         para(
-            "Concordia University Texas - B.B.A. Business Administration & Marketing, expected December 2026",
+            "Concordia University Texas - B.B.A. Business Administration & Marketing, expected December 2026 (online)",
             s["body_tight"],
         )
     )
@@ -274,13 +246,6 @@ def build_story():
             s["body_tight"],
         )
     )
-    story.append(
-        para(
-            "College Basketball Athlete, 2022-2025 | Cross Mountain Church Student Leader, 2023-2024",
-            s["body_tight"],
-        )
-    )
-
     return story
 
 
